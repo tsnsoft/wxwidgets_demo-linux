@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="wxwidgets_test" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/wxwidgets_test" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+			</Target>
+		</Build>
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="wxsmith/wxwidgets_testdialog.wxs" />
+		<Unit filename="wxwidgets_testApp.cpp" />
+		<Unit filename="wxwidgets_testApp.h" />
+		<Unit filename="wxwidgets_testMain.cpp" />
+		<Unit filename="wxwidgets_testMain.h" />
+		<Extensions>
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="wxwidgets_testApp.cpp" main="wxwidgets_testDialog" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxDialog wxs="wxsmith/wxwidgets_testdialog.wxs" src="wxwidgets_testMain.cpp" hdr="wxwidgets_testMain.h" fwddecl="0" i18n="1" name="wxwidgets_testDialog" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
