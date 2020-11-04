@@ -30,9 +30,6 @@ class wxwidgets_testDialog: public wxDialog
 
         //(*Handlers(wxwidgets_testDialog)
         void OnQuit(wxCommandEvent& event);
-        void OnAbout(wxCommandEvent& event);
-        void OnButton3Click(wxCommandEvent& event);
-        void OnButton4Click(wxCommandEvent& event);
         void OndoCalcClick(wxCommandEvent& event);
         //*)
 
